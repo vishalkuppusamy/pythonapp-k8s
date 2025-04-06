@@ -18,7 +18,7 @@ node {
             echo "k8s-app.yaml before the update:"
             cat k8s-app.yaml
 
-            sed -i 's+kuppusav/pythonapp.*+kuppusav/pythonapp:'"$DOCKERTAG"'+g' k8s-app.yaml
+            sed -i 's+kuppusav/pythonapp:+kuppusav/pythonapp:'"$DOCKERTAG"'+g' k8s-app.yaml
 
             echo "k8s-app.yaml after the update:"
             cat k8s-app.yaml

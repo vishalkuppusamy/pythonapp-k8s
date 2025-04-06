@@ -18,7 +18,7 @@ node {
                 echo "K8s-app.yaml before the update"
                 cat k8s-app.yaml
 
-                sed -i 's+kuppusav/pythonapp.*+kuppusav/pythonapp:${DOCKERTAG}+g' k8s-app.yaml
+                sed -i 's+kuppusav/pythonapp.*+kuppusav/pythonapp:${DOCKERTAG}/+g' k8s-app.yaml
                 cat k8s-app.yaml
                 git add .
                 git commit -m 'ob is update: $(env.BUILD_NUMBER)'

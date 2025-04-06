@@ -16,7 +16,7 @@ spec:
         app: pythonapp
     spec:
       containers:
-      - image: kuppusav/pythonapp:test
+      - image: kuppusav/pythonapp:1
         name: pythonapp
         resources: {}
 ---

@@ -27,8 +27,8 @@ node {
             git commit -m "Job updated image tag to $BUILD_NUMBER"
             git push https://$GIT_USERNAME:$GIT_PASSWORD@github.com/$GIT_USERNAME/pythonapp-k8s.git HEAD:main
           '''
-        } // close withCredentials
-      } // cose catchError
+        }
+      }
     } 
   } 
 } 

@@ -16,7 +16,7 @@ spec:
         app: pythonapp
     spec:
       containers:
-      - image: docker.io/kuppusav/pythonapp:21
+      - image: docker.io/kuppusav/pythonapp:23
         name: pythonapp
         resources: {}
 ---
